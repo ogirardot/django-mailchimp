@@ -21,6 +21,10 @@ Installation:
 4. To start using the API, you should start by using utils.get_connection(). This will use the API_KEY you
 just defined in settings.py
 
+5. To fully integrate django-mailchimp add the following line to your application's urls.py :
+
+    (r'^mailchimp/', include('mailchimp.urls')),
+
 
 Subscribing a user to a list:
 *****************************
